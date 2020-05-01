@@ -52,8 +52,7 @@
   "lint-staged": {
     "src/**/*.{ts,tsx,js}": [
       "madge --circular src/index.tsx",
-      "eslint --fix",
-      "git add"
+      "eslint --fix"
     ]
   }
 }
