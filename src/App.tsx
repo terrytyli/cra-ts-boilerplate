@@ -1,11 +1,21 @@
-import React, { ReactElement } from 'react'
+import { hot } from 'react-hot-loader'
 
-function App(): ReactElement {
+import React, { ReactElement, useState } from 'react'
+
+function _App(): ReactElement {
+  const [state, setState] = useState(0)
+  const project = { name: 'my app' }
+
   return (
     <div>
-      <div>App</div>
+      {project.name}
+      <div>{state}</div>
+      <button style={{ marginRight: 12 }} onClick={() => setState(state + 1)}>
+        +
+      </button>
+      <button onClick={() => setState(state - 1)}>-</button>
     </div>
   )
 }
-
-export default App
+export const App =
+  process.env.NODE_ENV === 'production' ? _App : hot(module)(_App)
