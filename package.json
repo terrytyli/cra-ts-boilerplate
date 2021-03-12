@@ -42,7 +42,7 @@
     "eslint-plugin-react-hooks": "^1.6.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.2",
-    "madge": "^3.8.0",
+    "madge": "^4.0.1",
     "prettier": "^2.0.5",
     "react-app-rewire-hot-loader-for-customize-cra": "^1.0.1",
     "react-app-rewired": "^2.1.1",
